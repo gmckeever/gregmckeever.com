@@ -21,17 +21,17 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      - name: Use Node.js 16.x
+      - name: Use Node.js 14.x
         uses: actions/setup-node@v1
         with:
-          node-version: 16.x
+          node-version: 14.x
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
         
       - name: Rebuild static directory
         run: |
-          rm -rf static/
+          rm -rf static/*
           npx run gssg --url https://www.gregmckeever.com
           
       - uses: stefanzweifel/git-auto-commit-action@v4

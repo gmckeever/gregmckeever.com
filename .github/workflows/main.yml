@@ -35,4 +35,4 @@ jobs:
       - name: Rebuild static directory
         run: |
           rm -rf static/
-          gssg --url https://www.gregmckeever.com
+          npx run gssg --url https://www.gregmckeever.com

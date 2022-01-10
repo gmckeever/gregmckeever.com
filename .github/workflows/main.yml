@@ -20,7 +20,7 @@ jobs:
     
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 16.x]
+        node-version: [16.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -29,12 +29,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-    
-      - name: Install gssg
-        run: |
-          npm i @jameslawler/ghost-static-site-generator
 
       - name: Rebuild static directory
         run: |
+          npm i @jameslawler/ghost-static-site-generator
           rm -rf static/
           gssg --url https://www.gregmckeever.com

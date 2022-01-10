@@ -1,7 +1,9 @@
 {
-  "active-version": "4.32.0",
+  "active-version": "4.32.1",
   "cli-version": "1.18.1",
   "channel": "stable",
   "name": "ghost-local",
+  "previous-version": "4.32.0",
+  "node-version": "16.13.1",
   "running": "development"
 }

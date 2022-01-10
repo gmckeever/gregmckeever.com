@@ -30,8 +30,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      - name: npm install
+        run: npm install
       - name: Rebuild static directory
         run: |
-          npm i @jameslawler/ghost-static-site-generator
           rm -rf static/
           gssg --url https://www.gregmckeever.com

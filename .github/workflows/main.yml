@@ -31,7 +31,6 @@ jobs:
         
       - name: Rebuild static directory
         run: |
-          rm -rf static/
           npx gssg --url https://www.gregmckeever.com
           
       - uses: stefanzweifel/git-auto-commit-action@v4

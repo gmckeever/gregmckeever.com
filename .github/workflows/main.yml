@@ -32,7 +32,7 @@ jobs:
       - name: Rebuild static directory
         run: |
           rm -rf static/
-          npx run gssg --url https://www.gregmckeever.com
+          npx gssg --url https://www.gregmckeever.com
           
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:

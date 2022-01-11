@@ -4,5 +4,6 @@
   "channel": "stable",
   "name": "ghost-local",
   "previous-version": "4.32.0",
-  "node-version": "16.13.1"
+  "node-version": "16.13.1",
+  "running": "development"
 }
